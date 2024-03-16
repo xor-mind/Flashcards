@@ -1,0 +1,38 @@
+.panes-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-pane {
+    width: 18%;
+    background: #ccc;
+}
+
+.panes-separator {
+    width: 1px;
+    border: 1px outset #777777;
+    background: #777777;
+    box-shadow: 0px 0px 10px black;
+    position: relative;
+    cursor: col-resize;
+}
+
+.right-pane {
+    flex: auto;
+    background: #eee;
+}
+
+.panes-container,
+.panes-separator{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.left-pane,
+.right-pane {
+    margin: 0;
+    padding: 0px;
+    padding-left: 1em;
+    height: 100%;
+}

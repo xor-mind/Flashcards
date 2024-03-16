@@ -1,0 +1,55 @@
+<!-- 
+flashcards.html
+
+This is the main page for my flascards app. 
+it currently just displays a flashcard that can be flipped.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Flashcard App Prototype</title>
+     <script src="/js/simpledrag1.js"></script>
+     <link rel="stylesheet" href="/css/splitscreen.css">     
+     <link rel="stylesheet" href="/css/flashcards.css">
+     <script type="module" src="/js/flashcards_main.js"></script>
+     <script defer src="/js/splitscreen.js"></script>
+ </head>
+ <body>
+    <div class="panes-container">
+        <div class="left-pane" id="left-pane">
+            <p>Categories</p>
+            <div id="categories-content">
+                <ul>
+                    <li>
+                        <a href="#" id="all-categories">All</a>
+                        <ul id="all-categories-list">
+                            <!-- Dynamically filled categories will go here -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panes-separator" id="panes-separator"></div>
+        <div class="right-pane" id="right-pane">
+            <div id="flashcards_list">
+                <!-- Dynamically filled flash cards will go here -->
+            </div>
+        </div>
+    </div>    
+
+     <!-- Flashcard Overlay -->
+     <div id="overlay" style="display:none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+        <div class="flashcard" id="flashcard">
+            <div class="front" id="front">
+                <!-- Content for the front side will be inserted here -->
+            </div>
+            <div class="back" id="back">
+                <!-- Content for the back side will be inserted here -->
+            </div> 
+        </div>
+    </div>
+ </body>
+ </html>
+ 

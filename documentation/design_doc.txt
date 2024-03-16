@@ -1,0 +1,61 @@
+Version: Alpha
+
+Flashcards is a fullstack webapp for Flashcards. 
+
+Goals:
+
+	- have a list of categories and subcategories
+	- have flashcards
+	- render latex
+	- run good on desktop and mobile 
+
+	- HTML/CSS/Javascript
+	- Node.js, Express.js
+	- MySql
+
+
+Software Architecture: 
+
+This App is essentially just a GUI representation of our Flashcard
+data. The App logic pertains mainly to how the GUI should look, 
+populating content, and styling the content. 
+
+We will be using Responsive design(Fluid Grids, Flexible Images, 
+and Media Queries).
+
+It should look something like this:
+-------------------------------------------
+All					|	What is a GUI?
+Beginner			|	What is a pixel?
+	Documentation	|	Give an example of a loop structure in...
+	Example			|	What is recursion in computer science?
+Intermediate		|	Why is documentation important in prog...
+	Database		|	What should good documentation include?
+	...				|			...
+--------------------------------------------
+
+The GUI is a vertical splitscreen with a hierarchy of ul/li in the 
+left pane to hold categories, and the right pane is a list of 
+flashcards for the associated category. 
+
+Clicking on a category brings up all the flash cards for that 
+category. Clicking on on a flashcard's question will bring up an 
+overlay with the flashcard. The flash card can be flipped by 
+selecting it and the overlay can be closed by clicking/touching 
+outsidethe Flashcard.
+
+The backend is in express and serves the pages and creates the 
+CRUD routes for the fetch operations. 
+	routes:
+	 - get_flashcards
+	 - get_categories (category_id)
+
+The Database schema has two tables.
+(1) The Category table is an adjacency pattern to have a hierarchy 
+of categories. 
+(2) The Flashcard table contains a front and back field, and a 
+foreign key to a category.
+
+
+
+

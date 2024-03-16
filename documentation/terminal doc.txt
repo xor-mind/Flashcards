@@ -1,0 +1,41 @@
+0) https://nodejs.org/en
+
+Download Node.js if you don't have it!!
+
+1) npm init -y
+
+This command creates a package.json file in your 
+project directory, which keeps track of your project's
+dependencies and scripts.
+
+2) npm install express
+
+Next, install Express.js, a minimal and flexible 
+Node.js web application framework
+
+A suggested file structure for Node/Express projects:
+/your-project
+    /node_modules
+    /public
+        /css
+            - flashcards.css
+            - splitscreen.css
+        /js
+            - flashcards_main.js
+            - simpledrag1.js
+            - splitscreen.js
+    /views
+        - index.html
+    /routes
+    - app.js
+    - dataService.js
+    - uiService.js
+
+3) npm install mysql2
+we use mysql2 because it allows for easier asynchronous 
+programming using async/await syntax without the need for 
+wrapper libraries.
+
+Running The App:
+
+1) node app.js
