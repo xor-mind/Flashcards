@@ -1,6 +1,4 @@
-2024_03_14
 Todo:
-
 
 webdev/App/Flashcards:
 {
@@ -8,6 +6,11 @@ webdev/App/Flashcards:
 		- Get the app looking good on mobile!!!
 
 	Working On:
-		- getting the backend/front end connection working with stuff like flashcardsRoutes
+		- refactoring the GUI code
+		- getting the app to the state of my php deployment
+		- applying the new splitter that's mobile friendly.
+		- work on responsiveness.
 } 
 
+finished:
+- getting the backend/front end connection working with stuff like flashcardsRoutes
