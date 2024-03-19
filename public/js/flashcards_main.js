@@ -1,10 +1,10 @@
-import { fetchAndRenderCategories, fetchFlashCard, fetchAndDisplayFlashcards, hideOverlay } from './dataService.js';
+import { fetchAndRenderCategories, fetchFlashCard, fetchAndRenderFlashcards, hideOverlay } from './dataService.js';
 import { displayFlashCard, flipCard } from './uiService.js';
 
 document.addEventListener('DOMContentLoaded', function() 
 {
     fetchAndRenderCategories();
-    fetchAndDisplayFlashcards();
+    fetchAndRenderFlashcards();
 });
 
 // Global variables and event listeners for UI interactions

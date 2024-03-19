@@ -6,11 +6,17 @@ webdev/App/Flashcards:
 		- Get the app looking good on mobile!!!
 
 	Working On:
-		- refactoring the GUI code
-		- getting the app to the state of my php deployment
+		{
+			- refactoring the GUI code
+			- getting the app to the state of my php deployment
+		}
 		- applying the new splitter that's mobile friendly.
 		- work on responsiveness.
 } 
+
+Last thought:
+should function showFlashcardOverlay(flashcard) be in dataService.js, also whata botu teh styling? 
+should and style and content be separate or coupled?
 
 finished:
 - getting the backend/front end connection working with stuff like flashcardsRoutes

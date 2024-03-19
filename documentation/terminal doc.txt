@@ -1,3 +1,5 @@
+npm install express bcrypt mysql jsonwebtoken dotenv
+
 0) https://nodejs.org/en
 
 Download Node.js if you don't have it!!

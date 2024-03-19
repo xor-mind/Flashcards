@@ -11,7 +11,8 @@ const fetchAndRenderCategories = () => {
         .catch(error => console.error('Error:', error));
 };
 
-const appendCategories = (categories, parentElement) => {
+const appendCategories = (categories, parentElement) => 
+{
     categories.forEach(category => {
         const listItem = document.createElement('li');
         const link = document.createElement('a');
@@ -41,7 +42,7 @@ document.getElementById('all-categories').addEventListener('click', function(e) 
     //fetchCategories(); // This might be a way to "reset" to showing all categories, depending on implementation
 });
 
-const fetchAndDisplayFlashcards = (categoryId = null) => {
+const fetchAndRenderFlashcards = (categoryId = null) => {
     const flashcardsListDiv = document.getElementById('flashcards_list');
     flashcardsListDiv.innerHTML = ''; // Clear existing flashcards
 
@@ -93,4 +94,4 @@ function fetchFlashCard() {
 }
 
 
-export { fetchCategories, fetchFlashCard, fetchAndDisplayFlashcards, hideOverlay, fetchAndRenderCategories };
+export { fetchCategories, fetchFlashCard, fetchAndRenderFlashcards, hideOverlay, fetchAndRenderCategories };

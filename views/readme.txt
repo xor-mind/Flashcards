@@ -1,0 +1,1 @@
+views/: (Optional) For any server-rendered views, if you decide to use a template engine.
